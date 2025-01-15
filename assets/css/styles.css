@@ -665,6 +665,18 @@ a.footer__logo {
 	.home__buttons {
 		flex-direction: column;
 	}
+	.services {
+    display: flex;
+    flex-direction: column; /* Menjaga elemen berurutan */
+    align-items: center;    /* Pusatkan secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+    text-align: center;     /* Pusatkan teks */
+    padding: 20px;          /* Tambahkan jarak agar teks tidak terpotong */
+  }
+
+  .services__data {
+    width: 100%; /* Pastikan kontainer mengikuti lebar layar kecil */
+  }
 	.home__img-1 {
 		width: 200px;
 		margin-left: 1.5rem;
@@ -688,7 +700,6 @@ a.footer__logo {
 @media screen and (min-width: 540px) {
 	.home__container,
   .about__container,
-  /* .services__container, */
   .projects__container,
   .contact__container {
 		grid-template-columns: 360px;
@@ -697,6 +708,18 @@ a.footer__logo {
 	.footer__content {
 		grid-template-columns: repeat(3, max-content);
 	}
+	.services {
+    display: flex;
+    flex-direction: column; /* Menjaga elemen berurutan */
+    align-items: center;    /* Pusatkan secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+    text-align: center;     /* Pusatkan teks */
+    padding: 20px;          /* Tambahkan jarak agar teks tidak terpotong */
+  }
+
+  .services__data {
+    width: 100%; /* Pastikan kontainer mengikuti lebar layar kecil */
+  }
 }
 @media screen and (min-width: 768px) {
 	.nav__menu {
@@ -726,7 +749,6 @@ a.footer__logo {
 .klik-disini:hover {
 	color: var(--second-color);
 }
-
 
 /* For large devices */
 @media screen and (min-width: 1151px) {
